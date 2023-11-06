@@ -13,11 +13,12 @@ class ECSource {
     Node<T> unique = head;
 
     while (head != null) {
+      //if the checker Node isn't equal to the .next value than its not unique
       if (unique.val != head.val) {
         return false;
-      } else
-        head = head.next;
+      } else head = head.next;
     }
+
     return true;
   }
 
